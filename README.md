@@ -28,7 +28,7 @@ The regex has the following format:
 ```
 You can define multiple replacements separated by "@@@". 
 
-Each replacement you have to define what a match is replaced with and a regex to find the match.
+Each replacement you have to define what a match is replaced with and a regex to find the match (separated by `!!!`).
 
 E.g. 
 
