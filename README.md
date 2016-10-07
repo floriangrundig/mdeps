@@ -2,7 +2,7 @@
 
 MDeps is a simple command line tool which inspects your source code and returns the dependencies between your modules/classes etc.
 
-MDeps is currently used to for ELM projects but should work for Java etc as well (as long as one dependency can be identified by one regular expression).
+MDeps is currently used for ELM projects but should work with Java etc as well (as long as one dependency can be identified by one regular expression).
 
 # Why
 We're using MDeps for creating a diagram to show the main components of our project/source code and 
@@ -69,7 +69,7 @@ e.g.
 ```
 make source=/Users/flg/code/humio/ui/src/elm | grep -E "\"Pages.* -> \"_Json"
 ```
-Will find all modules which are using some Json Libraries... 
+Will find all pages modules which are using some Json Libraries - which is in our case not a good thing because that should be encapsulated by the api modules... 
 
 
 # Download/Install
