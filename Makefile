@@ -2,7 +2,7 @@ ELM_CORE_LIBS = "^(Dict)|^(String)|^(Time)|^(Task)|^(Regex)|^(Maybe)|^(Array)|^(
 COLLAPSE_LIBS = "_Html_!!!^(Html)@@@_Json_!!!^(Json)@@@_Hop_!!!^(Hop)"
 
 run:  
-	@go run Main.go -d -n 3 \
+	@go run Main.go -n 3 \
     --ignoreDependencyRegEx=t$(ELM_CORE_LIBS) \
     --replaceDependencyRegEx=$(COLLAPSE_LIBS) \
     $(source)
