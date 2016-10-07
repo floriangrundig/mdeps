@@ -4,6 +4,10 @@ MDeps is a simple command line tool which inspects your source code and returns 
 
 MDeps is currently used to for ELM projects but should work for Java etc as well (as long as one dependency can be identified by one regular expression).
 
+# Why
+We're using MDeps for creating a diagram to show the main components of our project/source code and 
+how they interact with each other. This is important to identify archtetural design flaws.
+
 # How it works 
 
 Basically you have to define five settings:
@@ -57,11 +61,13 @@ module2
 ---> module2_dependency2
 ```
 
-If -d  specified you'll get a .dot format (GraphViz) which can be used to create a png-image 
-and which is really nice for grep (See Makefile for an example):
+If -d  specified you'll get a .dot format (GraphViz) which can be used to create a png-image.
+
+
+Use the Makefile example to grep your dependencies: 
 e.g. 
 ```
-grep -E "\"Pages.* -> \"Json"
+make source=/Users/flg/code/humio/ui/src/elm | grep -E "\"Pages.* -> \"_Json"
 ```
 Will find all modules which are using some Json Libraries... 
 
