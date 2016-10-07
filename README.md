@@ -61,7 +61,7 @@ module2
 ---> module2_dependency2
 ```
 
-If -d  specified you'll get a .dot format (GraphViz) which can be used to create a png-image.
+If -d  specified you'll get a .dot format (GraphViz) which can be used to create a svg-image.
 
 
 Use the Makefile example to grep your dependencies: 
