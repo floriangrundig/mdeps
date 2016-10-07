@@ -72,3 +72,5 @@ make source=/Users/flg/code/humio/ui/src/elm | grep -E "\"Pages.* -> \"_Json"
 Will find all modules which are using some Json Libraries... 
 
 
+# Download/Install
+This tool is written in go so download and install it via `go install`.
